@@ -1,8 +1,8 @@
 # Site settings
 title: Blog
 description: 'Jekyll-Uno - a minimal, responsive theme for Jekyll'
-url: 'https://changezkhan.github.io/'
-baseurl: ''
+url: 'https://changezkhan.github.io'
+baseurl: '/crm_blog'
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
 
