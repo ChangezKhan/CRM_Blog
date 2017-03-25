@@ -17,7 +17,7 @@ Now, add following code to `view.<ANY_VIEW>.php`
 
 ```php
 <?php
-$link = "index.php?module=<MODULE_NAME>&action=DetailView&record={$this->bean-><ID_OF_ANY_FIELD>}";
+$link = "<YOUR_URL>";
 $field = $this->bean-><VALUE_OF_FIELD>;
 $custom_url = "<a href='" .$link ."' >" .$field ."</a>";
 $this->ss->assign("CSTM_URL", $custom_url);
