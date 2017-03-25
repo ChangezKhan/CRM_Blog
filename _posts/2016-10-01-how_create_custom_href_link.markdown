@@ -12,7 +12,6 @@ First we will add following code to a field, on which we want hyper link on it t
 Now find the add the following code to an array of field, on which you want to see hyper link.
 
 ```php
-<?php
 'customCode' => '{$CSTM_URL}'
 ```
 
