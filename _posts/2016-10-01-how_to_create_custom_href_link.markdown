@@ -1,6 +1,6 @@
 ---
 title:  "How to add a custom href link on any field"
-date:   2016-01-08 15:04:23
+date:   2016-10-01 15:04:23
 categories: [SugarCRM]
 tags: [SugarCRM]
 ---
