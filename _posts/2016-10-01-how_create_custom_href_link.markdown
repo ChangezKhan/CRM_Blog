@@ -11,7 +11,10 @@ First we will add following code to a field, on which we want hyper link on it t
 
 Now find the add the following code to an array of field, on which you want to see hyper link.
 
-`'customCode' => '{$CSTM_URL}'`
+```php
+<?php
+'customCode' => '{$CSTM_URL}'
+```
 
 Now, add following code to `view.<ANY_VIEW>.php`
 
