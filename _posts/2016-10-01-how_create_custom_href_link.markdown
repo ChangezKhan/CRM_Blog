@@ -15,7 +15,7 @@ Now find the add the following code to an array of field, on which you want to s
 
 Now, add following code to `view.<ANY_VIEW>.php`
 
-```
+``` php
 $link = "index.php?module=<MODULE_NAME>&action=DetailView&record={$this->bean-><ID_OF_ANY_FIELD>}";
 $field = $this->bean-><VALUE_OF_FIELD>;
 $custom_url = "<a href='" .$link ."' >" .$field ."</a>";
