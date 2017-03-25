@@ -1,6 +1,6 @@
 ---
 title:  "How to add a custom href link on any field"
-date:   2016-10-01 15:04:23
+date:   2016-01-08 15:04:23
 categories: [SugarCRM]
 tags: [SugarCRM]
 ---
@@ -11,13 +11,15 @@ First we will add following code to a field, on which we want hyper link on it t
 
 Now find the add the following code to an array of field, on which you want to see hyper link.
 
-`'customCode' => '{$CSTM_URL}'`
+```php
+<?php
+'customCode' => '{$CSTM_URL}'
+```
 
 Now, add following code to `view.<ANY_VIEW>.php`
 
 ```php
-<?php
-$link = "<YOUR_URL>";
+$link = "index.php?module=<MODULE_NAME>&action=DetailView&record={$this->bean-><ID_OF_ANY_FIELD>}";
 $field = $this->bean-><VALUE_OF_FIELD>;
 $custom_url = "<a href='" .$link ."' >" .$field ."</a>";
 $this->ss->assign("CSTM_URL", $custom_url);
