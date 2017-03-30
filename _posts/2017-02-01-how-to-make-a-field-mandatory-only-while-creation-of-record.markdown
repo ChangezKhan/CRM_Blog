@@ -12,7 +12,7 @@ First of all, open `view.edit.php` file of any module and in `display()` functio
 global $mod_strings;
 $jsscript = <<<EOQ
 <script>
-    addToValidate('EditView','phone_office','varchar',true,'{$mod_strings['LBL_PHONE_OFFICE']}');    
+    addToValidate('EditView','phone_office','varchar',true, '{$mod_strings['LBL_PHONE_OFFICE']}');    
     $('#phone_office_label').html('{$mod_strings['LBL_PHONE_OFFICE']} <font color="red">*</font>');
 </script>
 EOQ;
