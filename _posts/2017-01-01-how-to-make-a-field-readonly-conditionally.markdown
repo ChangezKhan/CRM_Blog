@@ -9,10 +9,12 @@ First of all, open `view.edit.php` file of any module and in `display()` functio
 
 ```php
 <?php
+
 global $current_user;
-// check if current user is in specific role
-	
+
+// check if current user is in specific role	
 $IS_AM = in_array("<ROLE NAME>", ACLRole::getUserRoleNames($current_user->id));
+
 if($IS_AM)
 	$this->ev->ss->assign('readOnly', 'readonly = "readonly"');
 else
