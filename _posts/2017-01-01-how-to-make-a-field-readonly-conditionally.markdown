@@ -9,15 +9,14 @@ First of all, open `view.edit.php` file of any module and in `display()` functio
 
 ```php
 <?php
-	global $current_user;
-	// check if current user is in specific role
+global $current_user;
+// check if current user is in specific role
 	
-	$IS_AM = in_array("<ROLE NAME>", ACLRole::getUserRoleNames($current_user->id));
-	if($IS_AM)
-		$this->ev->ss->assign('readOnly', 'readonly = "readonly"');
-	else
-		$this->ev->ss->assign('readOnly', '');
-
+$IS_AM = in_array("<ROLE NAME>", ACLRole::getUserRoleNames($current_user->id));
+if($IS_AM)
+	$this->ev->ss->assign('readOnly', 'readonly = "readonly"');
+else
+	$this->ev->ss->assign('readOnly', '');
 ```
 
 Now, open `editviewdefs.php` file of same module and give following custom code to any desired field.
