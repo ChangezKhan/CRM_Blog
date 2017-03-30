@@ -16,9 +16,9 @@ global $current_user;
 $IS_AM = in_array("<ROLE NAME>", ACLRole::getUserRoleNames($current_user->id));
 
 if($IS_AM)
-	$this->ev->ss->assign('readOnly', 'readonly = "readonly"');
+    $this->ev->ss->assign('readOnly', 'readonly = "readonly"');
 else
-	$this->ev->ss->assign('readOnly', '');
+    $this->ev->ss->assign('readOnly', '');
 ```
 
 Now, open `editviewdefs.php` file of same module and give following custom code to any desired field.
